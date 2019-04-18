@@ -72,8 +72,12 @@ class AnimalTableViewController: UITableViewController {
         return cell
     }
 
+    //MARK: - Right Side Section Indexes
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return animalSectionTitles
+    }
     
-    //Function Call To Group & Sort in Ascending Order
+    // MARK: - Function Call To Group & Sort in Ascending Order
     func createAnimalDict() {
         //Retrieving first letter of the animal and building dictionary
         for animal in animals {
