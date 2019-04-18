@@ -78,7 +78,14 @@ class AnimalTableViewController: UITableViewController {
         return animalIndexTitles
     }
     
-    
+    override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        
+        guard let index = animalSectionTitles.index(of: title) else {
+            return -1
+        }
+        
+        return index
+    }
     
     // MARK: - Function Call To Group & Sort in Ascending Order
     func createAnimalDict() {
