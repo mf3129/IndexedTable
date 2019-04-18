@@ -2,8 +2,7 @@
 //  AnimalTableViewController.swift
 //  IndexedTableDemo
 //
-//  Created by Simon Ng on 3/10/2016.
-//  Copyright © 2016 AppCoda. All rights reserved.
+// Makan Fofana
 //
 
 import UIKit
